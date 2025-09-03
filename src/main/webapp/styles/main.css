@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f4ee; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 400px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container img {
+    width: 80px; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+p {
+    color: #000; 
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+legend {
+    font-weight: bold;
+    color: #000;
+    padding: 0 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"],
+.btn-back {
+    background-color: #c62828;   /* đỏ chính */
+    border: none;
+    padding: 12px 24px;
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 12px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 2px 0 #9f1e1e; /* bóng nhẹ giống ảnh */
+    transition: all 0.15s ease;
+}
+
+input[type="submit"]:hover,
+.btn-back:hover {
+    background-color: #b71c1c;   /* đỏ tối hơn khi hover */
+    filter: brightness(0.95);
+}
+
+input[type="submit"]:active,
+.btn-back:active {
+    transform: translateY(1px);  /* nhấn xuống */
+    box-shadow: 0 1px 0 #8c1a1a;
+}
+
+.panel {
+    text-align: left; /* Căn trái toàn bộ nội dung trong panel */
+}
+
+.panel p {
+    margin: 5px 0; /* Đảm bảo khoảng cách giữa các dòng */
+    text-align: left; /* Đảm bảo từng dòng p bên trong panel căn trái */
+}
+
+.panel span {
+    font-weight: bold; /* Làm nổi bật giá trị từ ${survey.xxx} */
+}
